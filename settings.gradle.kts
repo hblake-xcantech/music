@@ -32,6 +32,7 @@ dependencyResolutionManagement {
 
 include(":composeApp")
 include(":androidApp")
+include(":wearApp") // Music fork: the Pixel Watch app (MUSIC.md)
 include(":shared-icons")
 include(":nav")
 include(":ui-utils")
