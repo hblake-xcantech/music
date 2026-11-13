@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="ic_launcher_background">#18bcf2</color>
+    <!-- Music fork icon (design/music/icon.svg): violet, not Music Assistant's cyan house logo. -->
+    <color name="ic_launcher_background">#5B3FD9</color>
 </resources>

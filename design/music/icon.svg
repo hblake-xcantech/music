@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108" width="432" height="432">
+  <!-- Music (Blake's personal fork of the Music Assistant app). Adaptive-icon geometry: 108 units, safe zone = centre 66. -->
+  <rect width="108" height="108" fill="#5B3FD9"/>
+  <path fill="#FFFFFF" d="M24,47a4,4 0,0 1,8 0V61a4,4 0,0 1,-8 0Z"/>
+  <path fill="#FFFFFF" d="M37,38a4,4 0,0 1,8 0V70a4,4 0,0 1,-8 0Z"/>
+  <path fill="#FFFFFF" d="M50,43a4,4 0,0 1,8 0V65a4,4 0,0 1,-8 0Z"/>
+  <path fill="#FFFFFF" d="M63,35a4,4 0,0 1,8 0V73a4,4 0,0 1,-8 0Z"/>
+  <path fill="#FFFFFF" d="M76,45a4,4 0,0 1,8 0V63a4,4 0,0 1,-8 0Z"/>
+</svg>

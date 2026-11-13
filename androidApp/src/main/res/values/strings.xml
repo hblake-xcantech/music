@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Music Assistant</string>
+    <!-- Music fork: Blake's personal build of the Music Assistant app (see MUSIC.md). Not an official build. -->
+    <string name="app_name">Music</string>
 </resources>

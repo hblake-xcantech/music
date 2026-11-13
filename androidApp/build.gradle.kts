@@ -11,11 +11,14 @@ android {
     compileSdk = libs.versions.android.compileSdk.get().toInt()
 
     defaultConfig {
-        applicationId = "io.music_assistant.client"
+        // Music fork (MUSIC.md): its own application id so it installs beside the stock app.
+        // The Kotlin namespace stays upstream's so shared code and rebases keep working.
+        applicationId = "com.xcantech.music"
         minSdk = libs.versions.android.minSdk.get().toInt()
         targetSdk = libs.versions.android.targetSdk.get().toInt()
-        versionCode = 18
-        versionName = "0.17.0"
+        // upstream versionCode * 1000 + fork revision; bump the revision for every installed update.
+        versionCode = 18001
+        versionName = "0.17.0-music.1"
     }
     packaging {
         resources {
