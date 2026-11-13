@@ -89,6 +89,10 @@ android {
 
     buildToolsVersion = "36.0.0"
 
+    // The phone <-> watch wire is one source compiled into both apps (MUSIC.md, "Watch").
+    sourceSets["main"].kotlin.srcDir("../wire/src")
+    sourceSets["test"].kotlin.srcDir("../wire/test")
+
     lint {
         baseline = file("lint-baseline.xml")
     }
