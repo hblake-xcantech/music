@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Music fork widgets (MUSIC.md). -->
+<resources>
+    <color name="music_widget_surface">@android:color/system_accent2_50</color>
+    <color name="music_widget_on_surface">@android:color/system_neutral1_900</color>
+    <color name="music_widget_on_surface_variant">@android:color/system_neutral2_700</color>
+    <color name="music_widget_accent">@android:color/system_accent1_600</color>
+    <color name="music_widget_on_accent">@android:color/system_accent1_0</color>
+    <color name="music_widget_placeholder">@android:color/system_accent2_100</color>
+</resources>

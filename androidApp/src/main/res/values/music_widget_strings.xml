@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Music fork widgets and watch bridge (MUSIC.md). English only: these are not in upstream's Lokalise project. -->
+<resources>
+    <string name="music_widget_now_playing_label">Music · Now playing</string>
+    <string name="music_widget_now_playing_description">Artwork, title and controls for the selected player. Tap the player name to switch.</string>
+    <string name="music_widget_controls_label">Music · Controls</string>
+    <string name="music_widget_controls_description">Previous, play or pause, next and volume in one row.</string>
+    <string name="music_widget_previous">Previous</string>
+    <string name="music_widget_play_pause">Play or pause</string>
+    <string name="music_widget_next">Next</string>
+    <string name="music_widget_volume_down">Volume down</string>
+    <string name="music_widget_volume_up">Volume up</string>
+    <string name="music_widget_artwork">Artwork. Opens Music</string>
+    <string name="music_widget_choose_player">Choose player</string>
+    <string name="music_widget_preview_title">Song title</string>
+    <string name="music_widget_preview_artist">Artist</string>
+    <string name="music_widget_preview_player">Kitchen</string>
+    <string name="music_picker_title">Play on</string>
+    <string name="music_picker_connecting">Connecting to your server…</string>
+    <string name="music_picker_unreachable">Music cannot reach the server. Open the app to check.</string>
+    <string name="music_picker_open_app">Open Music</string>
+    <string name="music_picker_playing">%1$s · playing</string>
+    <string name="music_not_reachable">Music: server not reachable</string>
+</resources>

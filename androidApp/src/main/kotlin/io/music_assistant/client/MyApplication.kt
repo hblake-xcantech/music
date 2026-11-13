@@ -11,6 +11,10 @@ import io.music_assistant.client.di.cleanupSingletons
 import io.music_assistant.client.di.initKoin
 import io.music_assistant.client.logging.InMemoryLogWriter
 import io.music_assistant.client.services.MediaNotificationManager
+import io.music_assistant.client.surfaces.SurfaceHub
+import io.music_assistant.client.surfaces.wear.WearPublisher
+import io.music_assistant.client.surfaces.widget.MusicWidgets
+import org.koin.android.ext.android.get
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.stopKoin
 import java.io.File
@@ -23,8 +27,18 @@ class MyApplication : Application() {
             androidContext(this@MyApplication)
         }
         createNotificationChannel(this)
+        startSurfaces()
         cleanupStaleLogFile()
         installCrashHandler()
+    }
+
+    /** Music fork (MUSIC.md): home-screen widgets and the watch follow the app's session from process start. */
+    private fun startSurfaces() {
+        get<SurfaceHub>().apply {
+            addSurface(MusicWidgets(this@MyApplication))
+            addSurface(WearPublisher(this@MyApplication))
+            start()
+        }
     }
 
     private fun cleanupStaleLogFile() {

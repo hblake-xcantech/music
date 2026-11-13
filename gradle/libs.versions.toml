@@ -56,6 +56,8 @@ bouncycastle = "1.85.2"
 
 
 [libraries]
+# Music fork: Wear OS Data Layer, used by :androidApp (bridge) and :wearApp.
+play-services-wearable = { module = "com.google.android.gms:play-services-wearable", version = "20.0.1" }
 kermit = { module = "co.touchlab:kermit", version.ref = "kermit" }
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
 kotlin-test-junit = { module = "org.jetbrains.kotlin:kotlin-test-junit", version.ref = "kotlin" }

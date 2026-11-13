@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Music fork widgets (MUSIC.md). -->
+<resources>
+    <color name="music_widget_surface">#F3EFFA</color>
+    <color name="music_widget_on_surface">#1C1B22</color>
+    <color name="music_widget_on_surface_variant">#5E5A6B</color>
+    <color name="music_widget_accent">#5B3FD9</color>
+    <color name="music_widget_on_accent">#FFFFFF</color>
+    <color name="music_widget_placeholder">#DDD5F3</color>
+    <color name="music_widget_chip">#14000000</color>
+</resources>

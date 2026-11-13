@@ -127,6 +127,56 @@
             android:name=".services.MainMediaPlaybackService"
             android:exported="false"
             android:foregroundServiceType="mediaPlayback" />
+        <!--
+            Music fork (MUSIC.md): home-screen widgets, their player picker, and the Pixel Watch
+            bridge. All of it lives in io.music_assistant.client.surfaces and rides the app's one
+            server session (SurfaceHub).
+        -->
+        <receiver
+            android:name=".surfaces.widget.NowPlayingWidgetProvider"
+            android:exported="true"
+            android:label="@string/music_widget_now_playing_label">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/music_widget_now_playing" />
+        </receiver>
+        <receiver
+            android:name=".surfaces.widget.ControlsWidgetProvider"
+            android:exported="true"
+            android:label="@string/music_widget_controls_label">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/music_widget_controls" />
+        </receiver>
+        <receiver
+            android:name=".surfaces.widget.WidgetActionReceiver"
+            android:exported="false" />
+        <activity
+            android:name=".surfaces.widget.PlayerPickerActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:noHistory="true"
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- Google Play services delivers the watch app's requests here; only the same package signed
+             with the same key on a paired watch can send them. -->
+        <service
+            android:name=".surfaces.wear.WearBridgeService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.wearable.REQUEST_RECEIVED" />
+                <data
+                    android:host="*"
+                    android:pathPrefix="/music/"
+                    android:scheme="wear" />
+            </intent-filter>
+        </service>
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.fileprovider"

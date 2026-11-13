@@ -122,6 +122,7 @@ dependencies {
     implementation(libs.androidx.car.app)
     implementation(libs.coil)
     implementation(libs.kermit)
+    implementation(libs.play.services.wearable) // Music fork: the Pixel Watch bridge (Wear OS Data Layer)
     debugImplementation(libs.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
 

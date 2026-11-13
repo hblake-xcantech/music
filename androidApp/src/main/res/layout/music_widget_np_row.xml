@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Music fork: now-playing widget, one row high. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/music_widget_bg"
+    android:clipToOutline="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/music_art"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:background="@drawable/music_widget_art_bg"
+        android:clipToOutline="true"
+        android:contentDescription="@string/music_widget_artwork"
+        android:scaleType="centerCrop"
+        android:src="@drawable/music_art_placeholder" />
+
+    <LinearLayout
+        android:id="@+id/music_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/music_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/music_widget_preview_title"
+            android:textColor="@color/music_widget_on_surface"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/music_subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/music_widget_preview_artist"
+            android:textColor="@color/music_widget_on_surface_variant"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/music_player"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/music_widget_chip_bg"
+            android:contentDescription="@string/music_widget_choose_player"
+            android:drawablePadding="4dp"
+            android:drawableStart="@drawable/ic_speaker"
+            android:drawableTint="@color/music_widget_accent"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="3dp"
+            android:text="@string/music_widget_preview_player"
+            android:textColor="@color/music_widget_accent"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginTop="2dp" />
+    </LinearLayout>
+
+    <ImageButton
+            android:id="@+id/music_prev"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/music_widget_previous"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/baseline_skip_previous_24"
+            android:tint="@color/music_widget_on_surface" />
+
+    <ImageButton
+            android:id="@+id/music_play"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginHorizontal="4dp"
+            android:background="@drawable/music_widget_play_bg"
+            android:contentDescription="@string/music_widget_play_pause"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/baseline_play_arrow_24"
+            android:tint="@color/music_widget_on_accent" />
+
+    <ImageButton
+            android:id="@+id/music_next"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/music_widget_next"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/baseline_skip_next_24"
+            android:tint="@color/music_widget_on_surface" />
+</LinearLayout>

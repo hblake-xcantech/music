@@ -1,0 +1,6 @@
+<!-- Music fork: shown in a widget while there is no artwork. Drawn small in the middle so centerCrop keeps it whole. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="72dp" android:height="72dp" android:viewportWidth="72" android:viewportHeight="72">
+    <group android:translateX="24" android:translateY="24">
+        <path android:fillColor="@color/music_widget_on_surface_variant" android:pathData="M12,3v10.55c-0.59,-0.34 -1.27,-0.55 -2,-0.55 -2.21,0 -4,1.79 -4,4s1.79,4 4,4 4,-1.79 4,-4V7h4V3h-6z" />
+    </group>
+</vector>
