@@ -37,6 +37,11 @@
 - **Kotlin Multiplatform** - Cross-platform compilation
 - **JVM 17** - Target for Android
 
+## Music fork (see `MUSIC.md`)
+- **play-services-wearable** (20.0.1) - Wear OS Data Layer. `:androidApp` (watch bridge) and `:wearApp`.
+- `:wearApp` only: **Compose BOM** 2026.09.00 (androidx Compose, not Compose Multiplatform), **Wear Compose** material3 / foundation / navigation 1.7.1, **Wear Tiles** 1.6.2, **ProtoLayout** 1.4.2, **Watch Face Complications data source** 1.3.0, **Guava** 33.4.8-android (ListenableFuture for tiles), **kotlinx-coroutines-android**.
+- The home-screen widgets use platform RemoteViews: no library.
+
 ---
 
 > **Maintenance**: Update this file when adding/removing libraries.

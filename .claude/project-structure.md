@@ -7,6 +7,8 @@
 | `composeApp` | Shared app code (Compose Multiplatform) |
 | `androidApp` | Android application |
 | `shared-icons` | Icon sets |
+| `wearApp` | Music fork: the Pixel Watch app. See `MUSIC.md`. |
+| `wire/src` | Music fork: the phone ↔ watch wire, a source directory compiled into `androidApp` and `wearApp` (not a module). |
 | `sendspin-kmp` | Sendspin player library, published to GitHub Packages. Run its tests with `./gradlew :sendspin-kmp:testAndroidHostTest`. See `sendspin-kmp/README.md`. |
 
 ## Source Sets
